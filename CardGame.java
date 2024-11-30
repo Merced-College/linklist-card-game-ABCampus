@@ -49,6 +49,9 @@ public class CardGame {
         // Print the loaded cards
         System.out.println("Cards loaded:");
         cardList.displayList();
+
+        cardList.shuffle();
+        System.out.println("Deck shuffled.");
 		
 		Card[] playerHand = new Card[5];
 		for(int i = 0; i < playerHand.length; i++)
