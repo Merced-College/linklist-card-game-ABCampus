@@ -1,3 +1,5 @@
+//Adam Barakat: Added shuffling
+
 //package linkedLists;
 
 import java.io.BufferedReader;
@@ -50,7 +52,8 @@ public class CardGame {
         System.out.println("Cards loaded:");
         cardList.displayList();
 
-        cardList.shuffle();
+        //Adam Barakat
+        cardList.shuffle();//shuffles deck
         System.out.println("Deck shuffled.");
 		
 		Card[] playerHand = new Card[5];

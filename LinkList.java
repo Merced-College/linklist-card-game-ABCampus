@@ -1,9 +1,11 @@
+//Adam Barakat: Added shuffling
+
 import java.util.*;
 
 public class LinkList
 {
 
-	public void shuffle() {
+	public void shuffle() {//Adam Barakat
 		ArrayList<Card> cards = new ArrayList<>();
 		Link current = first;
 	
