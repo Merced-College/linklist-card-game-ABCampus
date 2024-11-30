@@ -1,6 +1,28 @@
+import java.util.*;
 
 public class LinkList
 {
+
+	public void shuffle() {
+		ArrayList<Card> cards = new ArrayList<>();
+		Link current = first;
+	
+		//collect into arraylist
+		while (current != null) {
+			cards.add(current.cardLink);
+			current = current.next;
+		}
+	
+		//shuffle ArrayList
+		Collections.shuffle(cards);
+	
+		//rebuild the linked list
+		first = null;
+		for (Card card : cards) {
+			this.add(card);
+		}
+	}
+
 	private Link first;            // ref to first link on list
 
 	//-------------------------------------------------------------
